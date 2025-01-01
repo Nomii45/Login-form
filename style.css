@@ -1,0 +1,100 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: chocolate;
+    overflow: hidden;
+    background: (to bottom, #0f0c29, #302b63, #24243e);
+}
+
+.main {
+    width: 400px;
+    height: 500px;
+    box-shadow: 5px 20px 50px #000;
+    border-radius: 30px;
+   
+    overflow: hidden;
+}
+#chk{
+	display: none;
+}
+.Login{
+	position: relative;
+	width:400px;
+	height: 550px;
+   
+}
+label{
+    color: white;
+    font-size: 25px;
+    font-family: Arial;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+input {
+    margin: 40px;
+    padding: 10px;
+    font-size: 15px;
+    width: 300px;
+    height: 25px;
+    background: #e0dede;
+    border: 0px;
+    outline:none;
+    border-radius: 10px;
+    position: relative;
+    left: -1%;
+}
+.field{
+    margin: 20px;
+    position: relative;
+    left: 4%;
+}
+
+button {
+    width: 200px;
+    height: 45px;
+    margin: 20px;
+    border: 0px ;
+    outline: none;
+    border-radius: 10px;
+    position: relative;
+    left: 20%;
+    background-color: #573b8a;
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color: #7150ac;
+    font-weight: 4px;
+}
+ .Sign-up {
+    height: 500px;
+	background: #eee;
+	border-radius: 60%/ 10%;
+	transform: translateY(-140px);
+	transition: .8s ease-in-out;
+}
+.Sign-up label{
+    color: #573b8a;
+	transform: scale(.6);
+}
+
+#chk:checked ~ .Sign-up{
+	transform: translateY(-520px);
+}
+#chk:checked ~ .Sign-up label{
+	transform: scale(1);	
+}
+#chk:checked ~ .Login label{
+	transform: scale(.6);
+} 
